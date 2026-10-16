@@ -9,4 +9,4 @@ pages_build_output_dir = "."
 [[d1_databases]]
 binding = "DB"
 database_name = "my-portfolio-db"
-database_id = "REPLACE_WITH_DATABASE_ID"
+database_id = "9cdcf00d-8339-4d22-83e2-bf14d39f4940"
