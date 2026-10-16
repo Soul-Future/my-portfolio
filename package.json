@@ -1,0 +1,19 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "开发者个人作品集网站（Cloudflare Pages + D1 全栈）",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "d1:migrate:local": "wrangler d1 execute DB --local --file=migrations/0001_init.sql",
+    "d1:migrate:remote": "wrangler d1 execute DB --remote --file=migrations/0001_init.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  },
+  "allowScripts": {
+    "workerd@1.20250718.0": true,
+    "esbuild@0.17.19": true,
+    "sharp@0.33.5": true
+  }
+}

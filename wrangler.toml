@@ -1,0 +1,12 @@
+# Cloudflare Pages + D1 配置
+name = "my-portfolio"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "."
+
+# D1 数据库绑定（函数内通过 env.DB 访问）
+# 本地开发时 database_id 可先用占位值；部署前请执行 `wrangler d1 create my-portfolio-db`
+# 并把返回的真实 database_id 填到下面。
+[[d1_databases]]
+binding = "DB"
+database_name = "my-portfolio-db"
+database_id = "REPLACE_WITH_DATABASE_ID"

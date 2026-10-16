@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简历 | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div id="bg-layer" class="bg-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="site-nav" id="site-nav">
+      <a class="nav-brand" href="./index.html">Portfolio</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./resume.html" class="active">简历</a></li>
+        <li><a href="./contact.html">联系</a></li>
+        <li><a href="./projects.html">项目</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 简历内容：由 main.js 根据 site-config.json 动态渲染 -->
+  <main class="page" id="page-resume">
+    <section class="section glass" id="resume-summary"><!-- 个人总结 --></section>
+    <section class="section glass" id="resume-education"><!-- 教育经历 --></section>
+    <section class="section glass" id="resume-experience"><!-- 工作/实习经历 --></section>
+    <section class="section glass" id="resume-skills"><!-- 技能栈 --></section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="./assets/mock/images.js"></script>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

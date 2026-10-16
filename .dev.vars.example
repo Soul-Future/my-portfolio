@@ -1,0 +1,10 @@
+# 本地开发环境变量示例
+# 复制本文件为 .dev.vars 并填写真实值，`wrangler pages dev` 会自动加载。
+# 注意：.dev.vars 已被 .gitignore 忽略，切勿提交到仓库。
+
+# 管理员账号（预置，无公开注册）
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=change-me-please
+
+# 会话签名密钥：请用长随机字符串，例如 `openssl rand -hex 32` 生成
+AUTH_SECRET=please-generate-a-long-random-secret

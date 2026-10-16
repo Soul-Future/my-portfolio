@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台管理 | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <!-- 后台登录 -->
+  <div id="admin-login" class="admin-login">
+    <form id="login-form" class="glass">
+      <h1>后台登录</h1>
+      <input type="text" id="login-username" placeholder="账号" autocomplete="username">
+      <input type="password" id="login-password" placeholder="密码" autocomplete="current-password">
+      <button type="submit">登录</button>
+    </form>
+  </div>
+
+  <!-- 后台编辑面板：登录后显示 -->
+  <main id="admin-panel" class="admin-panel" hidden>
+    <header class="admin-header">
+      <h1>内容管理</h1>
+      <div class="admin-actions">
+        <button id="btn-save" type="button">保存全部</button>
+        <button id="btn-logout" type="button">退出登录</button>
+      </div>
+    </header>
+    <p class="admin-hint">修改后点击「保存全部」，内容会写入云端数据库，前台刷新即生效。</p>
+
+    <!-- 各编辑表单：由 admin.js 根据配置动态生成 -->
+    <section class="section glass" id="admin-profile"><!-- 个人信息编辑 --></section>
+    <section class="section glass" id="admin-contact"><!-- 联系方式编辑 --></section>
+    <section class="section glass" id="admin-resume"><!-- 简历内容编辑 --></section>
+    <section class="section glass" id="admin-projects"><!-- 项目管理 --></section>
+  </main>
+
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/admin.js"></script>
+</body>
+</html>
